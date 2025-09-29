@@ -20,6 +20,9 @@ let arrow1 = (arg) => {
  *   - le mot clée "return" est interdis
  */
 
-let arrow2 = (arg) => {arg+1}
+let arrow2 = (arg) => arg+1
+
+console.log(arrow1(1));
+console.log(arrow2(2));
 
 module.exports = {arrow1, arrow2};
