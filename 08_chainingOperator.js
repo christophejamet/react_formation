@@ -16,8 +16,9 @@
  * 
  */
 
-const getGroupName = ({group:{name:value}}) => value;
+const getGroupName = (({group:name}) => name);
 
 console.log(getGroupName({name:"John", group: {name: "admin"}}))
+console.log(getGroupName({name:"John", groupe: {name: "admin"}}))
 
 module.exports = {getGroupName};
